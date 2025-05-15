@@ -1,22 +1,21 @@
 // Aliases
-Alias: $MyCs = http://example.org/CodeSystem/my-additional-codesystem-for-marital-status
-Alias: $MyVs = http://example.org/CodeSystem/my-additional-codes-for-marital-status
-
+Alias: $ACSMS = http://example.org/CodeSystem/additional-codesystem-for-marital-status //Additional Code System Marital Status
+Alias: $AVSMS = http://example.org/CodeSystem/additional-codes-for-marital-status //Additional Valueset Marital Status
 
 // Defino nuevo value set
-ValueSet: MyAdditionalCodesForMaritalStatus
-Id: my-additional-codes-for-marital-status
-Title: "My additional valueset for marital status"
-Description: "Test para valueset en codes de estados civiles"
+ValueSet: AdditionalCodesForMaritalStatus
+Id: additional-codes-for-marital-status
+Title: "Additional valueset for marital status"
+Description: "Extensión de Value Set Codes de estados civiles"
 
 * include codes from system http://hl7.org/fhir/ValueSet/marital-status
-//* include codes from system MyAdditionalCodeSystemForMaritalStatus // equivalente al alias usado abajo
-* include codes from system $MyCs
+//* include codes from system AdditionalCodeSystemForMaritalStatus // equivalente al alias usado abajo
+* include codes from system $ACSMS
 
 // Defino nuevo codesystem para estado civil (extend)
-CodeSystem: MyAdditionalCodeSystemForMaritalStatus
-Id: my-additional-codesystem-for-marital-status
-Title: "My additional codesystem for marital status"
+CodeSystem: AdditionalCodeSystemForMaritalStatus
+Id: additional-codesystem-for-marital-status
+Title: "Additional codesystem for marital status"
 Description: "Test para extender los code de estados civiles"
 
 * ^status = #active
@@ -30,12 +29,12 @@ Description: "Test para extender los code de estados civiles"
 
 
 // Declaration (del Artifact)
-Profile:      MyPatientProfile
+Profile:      PatientProfile
 
 // Metadata (sobre el Artifact)
 Parent:       Patient
-Id:           my-patient-profile
-Title:        "My Patient Profile"
+Id:           patient-profile
+Title:        "Patient Profile"
 Description:  "Perfil de ejemplo basado en el recurso Patient para guía de implementación."
 
 // Rules (a cumplir en las instancias)
@@ -57,8 +56,8 @@ Description:  "Perfil de ejemplo basado en el recurso Patient para guía de impl
 * active 0..1  MS
 
 * maritalStatus 1.. MS
-// * maritalStatus from MyAdditionalCodesForMaritalStatus (extensible) // equivalente al alias usado abajo
-* maritalStatus from $MyVs (extensible)
+// * maritalStatus from AdditionalCodesForMaritalStatus (extensible) // equivalente al alias usado abajo
+* maritalStatus from $AVSMS (extensible)
 
 
 * deceased[x] only boolean // en la doc de fhir podia ser compuesto por boolean y la fecha, acá se limita a que solo sea bool
@@ -75,7 +74,7 @@ Description:  "Perfil de ejemplo basado en el recurso Patient para guía de impl
 // ----------
 // Patient example
 Instance: GastonMuzas
-InstanceOf: MyPatientProfile
+InstanceOf: PatientProfile
 Usage: #example
 
 * birthDate = 1992-08-23
@@ -94,7 +93,7 @@ Usage: #example
 * telecom.value = "gastonmuzas@gmail.com"
 
 * maritalStatus.coding
-  * system = "http://example.org/CodeSystem/my-additional-codesystem-for-marital-status"
+  * system = "http://example.org/CodeSystem/additional-codesystem-for-marital-status"
   * code = #ghosting
 
 // codigos
