@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "interpretation-confidence",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet interpretation-confidence</b></p><a name=\"interpretation-confidence\"> </a><a name=\"hcinterpretation-confidence\"> </a><a name=\"interpretation-confidence-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/415584804\">415584804</a></td><td>Suspected (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/410592001\">410592001</a></td><td>Probably Present (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/410535003\">410535003</a></td><td>Confirmed Present (qualifier value)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/interpretation-confidence",
+  "version" : "0.1.0",
+  "name" : "InterpretationConfidence",
+  "title" : "Interpretation Confidence Value Set",
+  "status" : "active",
+  "date" : "2025-05-11T20:59:48-03:00",
+  "publisher" : "MyPublisher",
+  "contact" : [{
+    "name" : "MyPublisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "Grado de confianza de que una condición está presente",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "415584804",
+        "display" : "Suspected (qualifier value)"
+      },
+      {
+        "code" : "410592001",
+        "display" : "Probably Present (qualifier value)"
+      },
+      {
+        "code" : "410535003",
+        "display" : "Confirmed Present (qualifier value)"
+      }]
+    }]
+  }
+}

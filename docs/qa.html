@@ -1,0 +1,820 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 93, errors = 7, warn = 31, info = 4-->
+<head>
+  <title>exampleproject : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    button { padding: 0px 8px; font-size: 12px; cursor: pointer; border-radius: 2px; border: 1px solid #ccc; background-color: #f0f0f0 }
+    button:hover { background-color: #e0e0e0; }
+    .code-value { display: inline; }
+    .code-hidden { display: none; }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+    function toggleCodes() {
+      const codes = document.getElementsByClassName('code-value');
+      for (let code of codes) {
+        code.classList.toggle('code-hidden');
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for exampleproject</h1>
+ <p>Generated Sun May 11 21:00:53 ART 2025, FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = <a href="http://example.org">http://example.org</a> (<a href="http://example.org/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.8.26</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.example, Canonical = http://example.org</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Language Info:</td><td>This IG has no language information</td></tr>
+ <tr><td>Publication Request:</td><td><ul><li><span title="Not Found">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="dep" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/gaston/Escritorio/Desarrollo/FHIR_CABA/example-project/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> fhir.example</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://example.org</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/gaston/Escritorio/Desarrollo/FHIR_CABA/example-project/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAACwSURBVDhP7ZLBDsIwCIaLZz34xG3f2cQYo5UfYalJoY07ePFL4GcbpZSVWmvJgwifG+njkLDACgfVIehAQ5ffdMDvxSS2Dmqty62UUmS1rIWD8UuWd9xxVt1AnoaSGx6Buap+0G80K3BTtbtwhLPZQL0CSIA9OwUXON7dZkBeASTAThb3bffMjnCHGy00ZgUeqi5f3YOcsw01vsqYMrMljwgLrBDOwP53xL+D3R2k9ALHsmr3Yu73+gAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.3.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.3.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/gaston/Escritorio/Desarrollo/FHIR_CABA/example-project/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.2.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/gaston/Escritorio/Desarrollo/FHIR_CABA/example-project/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.2.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">see above</td></tr>
+</table><para>Templates: fhir.base.template#current. Tools: 0.5.0</para></div></td></tr>
+ <tr><td>Related IGs:</td><td>n/a</td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/devicerequest.html">DeviceRequest</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/nutritionorder.html">NutritionOrder</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/imagingstudy.html">ImagingStudy</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-category.html">ObservationCategoryCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-methods.html">ObservationMethods</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/devicemetric.html">DeviceMetric</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-referencerange-meaning.html">ObservationReferenceRangeMeaningCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html">ObservationReferenceRangeAppliesToCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/molecularsequence.html">MolecularSequence</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/media.html">Media</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>
+ (2 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.org (Problem #1 with package-list.json at http://example.org: Not Found)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
+ <tr><td>Summary:</td><td> errors = 7, warn = 31, info = 4, broken links = 93, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>93</b></td><td><b>8</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_CodeSystem-additional-codesystem-for-marital-status"><b>/home/gaston/Escritorio/Desarrollo/FHIR_CABA/example-project/fsh-generated/resources/CodeSystem-additional-codesystem-for-marital-status</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_ImplementationGuide-fhir.example"><b>/home/gaston/Escritorio/Desarrollo/FHIR_CABA/example-project/fsh-generated/resources/ImplementationGuide-fhir.example</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_Observation-HeartRateRecoveryExample"><b>/home/gaston/Escritorio/Desarrollo/FHIR_CABA/example-project/fsh-generated/resources/Observation-HeartRateRecoveryExample</b></a></td><td><b>2</b></td><td><b>7</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_Patient-GastonMuzas"><b>/home/gaston/Escritorio/Desarrollo/FHIR_CABA/example-project/fsh-generated/resources/Patient-GastonMuzas</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_Patient-ThomasHeart"><b>/home/gaston/Escritorio/Desarrollo/FHIR_CABA/example-project/fsh-generated/resources/Patient-ThomasHeart</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_StructureDefinition-hrr-fsh"><b>/home/gaston/Escritorio/Desarrollo/FHIR_CABA/example-project/fsh-generated/resources/StructureDefinition-hrr-fsh</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_StructureDefinition-hrr-profile"><b>/home/gaston/Escritorio/Desarrollo/FHIR_CABA/example-project/fsh-generated/resources/StructureDefinition-hrr-profile</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_StructureDefinition-interpretation-certainty"><b>/home/gaston/Escritorio/Desarrollo/FHIR_CABA/example-project/fsh-generated/resources/StructureDefinition-interpretation-certainty</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_StructureDefinition-patient-profile"><b>/home/gaston/Escritorio/Desarrollo/FHIR_CABA/example-project/fsh-generated/resources/StructureDefinition-patient-profile</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_ValueSet-additional-codes-for-marital-status"><b>/home/gaston/Escritorio/Desarrollo/FHIR_CABA/example-project/fsh-generated/resources/ValueSet-additional-codes-for-marital-status</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_ValueSet-heart-rate-recovery"><b>/home/gaston/Escritorio/Desarrollo/FHIR_CABA/example-project/fsh-generated/resources/ValueSet-heart-rate-recovery</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_ValueSet-interpretation-confidence"><b>/home/gaston/Escritorio/Desarrollo/FHIR_CABA/example-project/fsh-generated/resources/ValueSet-interpretation-confidence</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/GastonMuzas.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/HeartRateRecoveryExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/ThomasHeart.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-additional-codesystem-for-marital-status-testing.html#l318">output&#8203;/CodeSystem-additional-codesystem-for-marital-status-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-additional-codesystem-for-marital-status.change.history.html#l287">output&#8203;/CodeSystem-additional-codesystem-for-marital-status&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-additional-codesystem-for-marital-status.html#l412">output&#8203;/CodeSystem-additional-codesystem-for-marital-status&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-additional-codesystem-for-marital-status.json.html#l405">output&#8203;/CodeSystem-additional-codesystem-for-marital-status&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 255, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-additional-codesystem-for-marital-status.ttl.html#l474">output&#8203;/CodeSystem-additional-codesystem-for-marital-status&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 257, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-additional-codesystem-for-marital-status.xml.html#l482">output&#8203;/CodeSystem-additional-codesystem-for-marital-status&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 252, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-HeartRateRecoveryExample.change.history.html#l287">output&#8203;/Observation-HeartRateRecoveryExample&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-HeartRateRecoveryExample.html#l344">output&#8203;/Observation-HeartRateRecoveryExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 195, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-HeartRateRecoveryExample.json.html#l390">output&#8203;/Observation-HeartRateRecoveryExample&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 245, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-HeartRateRecoveryExample.ttl.html#l429">output&#8203;/Observation-HeartRateRecoveryExample&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 246, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-HeartRateRecoveryExample.xml.html#l422">output&#8203;/Observation-HeartRateRecoveryExample&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-GastonMuzas.change.history.html#l287">output&#8203;/Patient-GastonMuzas&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-GastonMuzas.html#l332">output&#8203;/Patient-GastonMuzas&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 195, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-GastonMuzas.json.html#l378">output&#8203;/Patient-GastonMuzas&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 238, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-GastonMuzas.ttl.html#l420">output&#8203;/Patient-GastonMuzas&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-GastonMuzas.xml.html#l416">output&#8203;/Patient-GastonMuzas&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-ThomasHeart.change.history.html#l287">output&#8203;/Patient-ThomasHeart&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-ThomasHeart.html#l309">output&#8203;/Patient-ThomasHeart&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 195, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-ThomasHeart.json.html#l330">output&#8203;/Patient-ThomasHeart&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 210, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-ThomasHeart.ttl.html#l339">output&#8203;/Patient-ThomasHeart&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-ThomasHeart.xml.html#l341">output&#8203;/Patient-ThomasHeart&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 206, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hrr-fsh-definitions.html#l5839">output&#8203;/StructureDefinition-hrr-fsh-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 542, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hrr-fsh-examples.html#l312">output&#8203;/StructureDefinition-hrr-fsh-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hrr-fsh-mappings.html#l1294">output&#8203;/StructureDefinition-hrr-fsh-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 391, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hrr-fsh-testing.html#l334">output&#8203;/StructureDefinition-hrr-fsh-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 240, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hrr-fsh.html#l6771">output&#8203;/StructureDefinition-hrr-fsh&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1759, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hrr-fsh.profile.history.html#l307">output&#8203;/StructureDefinition-hrr-fsh&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hrr-fsh.profile.json.html#l5524">output&#8203;/StructureDefinition-hrr-fsh&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2937, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hrr-fsh.profile.ttl.html#l10302">output&#8203;/StructureDefinition-hrr-fsh&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2217, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hrr-fsh.profile.xml.html#l10299">output&#8203;/StructureDefinition-hrr-fsh&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2765, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hrr-profile-definitions.html#l6343">output&#8203;/StructureDefinition-hrr-profile-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 577, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hrr-profile-examples.html#l344">output&#8203;/StructureDefinition-hrr-profile-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hrr-profile-mappings.html#l1293">output&#8203;/StructureDefinition-hrr-profile-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 400, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hrr-profile-testing.html#l340">output&#8203;/StructureDefinition-hrr-profile-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hrr-profile.html#l7371">output&#8203;/StructureDefinition-hrr-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1877, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hrr-profile.profile.history.html#l313">output&#8203;/StructureDefinition-hrr-profile&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hrr-profile.profile.json.html#l5692">output&#8203;/StructureDefinition-hrr-profile&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 3027, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hrr-profile.profile.ttl.html#l10608">output&#8203;/StructureDefinition-hrr-profile&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2287, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-hrr-profile.profile.xml.html#l10593">output&#8203;/StructureDefinition-hrr-profile&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2845, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-interpretation-certainty-definitions.html#l1612">output&#8203;/StructureDefinition-interpretation-certainty-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 299, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-interpretation-certainty-mappings.html#l365">output&#8203;/StructureDefinition-interpretation-certainty-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-interpretation-certainty-testing.html#l334">output&#8203;/StructureDefinition-interpretation-certainty-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 240, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-interpretation-certainty.html#l1277">output&#8203;/StructureDefinition-interpretation-certainty&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 585, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-interpretation-certainty.profile.history.html#l307">output&#8203;/StructureDefinition-interpretation-certainty&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-interpretation-certainty.profile.json.html#l886">output&#8203;/StructureDefinition-interpretation-certainty&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 522, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-interpretation-certainty.profile.ttl.html#l1371">output&#8203;/StructureDefinition-interpretation-certainty&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 468, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-interpretation-certainty.profile.xml.html#l1326">output&#8203;/StructureDefinition-interpretation-certainty&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 483, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile-definitions.html#l2616">output&#8203;/StructureDefinition-patient-profile-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/span&#8203;/a at Line 348, column 587</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/CodeSystem/additional-codes-for-marital-status' for &quot;http://example.org/CodeSystem/additional-codes-for-marital-status&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile-definitions.html#l3516">output&#8203;/StructureDefinition-patient-profile-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/span&#8203;/a at Line 412, column 1515</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/CodeSystem/additional-codes-for-marital-status' for &quot;http://example.org/CodeSystem/additional-codes-for-marital-status&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile-definitions.html#l7887">output&#8203;/StructureDefinition-patient-profile-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/span&#8203;/a at Line 663, column 413</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/CodeSystem/additional-codes-for-marital-status' for &quot;http://example.org/CodeSystem/additional-codes-for-marital-status&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile-definitions.html#l10151">output&#8203;/StructureDefinition-patient-profile-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 827, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile-examples.html#l344">output&#8203;/StructureDefinition-patient-profile-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile-mappings.html#l1529">output&#8203;/StructureDefinition-patient-profile-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 419, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile-testing.html#l340">output&#8203;/StructureDefinition-patient-profile-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile.html#l1276">output&#8203;/StructureDefinition-patient-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 449, column 238</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/CodeSystem/additional-codes-for-marital-status' for &quot;http://example.org/CodeSystem/additional-codes-for-marital-status&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile.html#l1569">output&#8203;/StructureDefinition-patient-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 488, column 148</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/CodeSystem/additional-codes-for-marital-status' for &quot;http://example.org/CodeSystem/additional-codes-for-marital-status&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile.html#l2261">output&#8203;/StructureDefinition-patient-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 627, column 272</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/CodeSystem/additional-codes-for-marital-status' for &quot;http://example.org/CodeSystem/additional-codes-for-marital-status&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile.html#l2311">output&#8203;/StructureDefinition-patient-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 635, column 148</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/CodeSystem/additional-codes-for-marital-status' for &quot;http://example.org/CodeSystem/additional-codes-for-marital-status&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile.html#l3965">output&#8203;/StructureDefinition-patient-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 982, column 238</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/CodeSystem/additional-codes-for-marital-status' for &quot;http://example.org/CodeSystem/additional-codes-for-marital-status&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile.html#l4993">output&#8203;/StructureDefinition-patient-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1197, column 148</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/CodeSystem/additional-codes-for-marital-status' for &quot;http://example.org/CodeSystem/additional-codes-for-marital-status&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile.html#l6169">output&#8203;/StructureDefinition-patient-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1542, column 238</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/CodeSystem/additional-codes-for-marital-status' for &quot;http://example.org/CodeSystem/additional-codes-for-marital-status&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile.html#l6462">output&#8203;/StructureDefinition-patient-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1581, column 148</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/CodeSystem/additional-codes-for-marital-status' for &quot;http://example.org/CodeSystem/additional-codes-for-marital-status&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile.html#l7154">output&#8203;/StructureDefinition-patient-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1720, column 272</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/CodeSystem/additional-codes-for-marital-status' for &quot;http://example.org/CodeSystem/additional-codes-for-marital-status&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile.html#l7201">output&#8203;/StructureDefinition-patient-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 1727, column 148</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/CodeSystem/additional-codes-for-marital-status' for &quot;http://example.org/CodeSystem/additional-codes-for-marital-status&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile.html#l8855">output&#8203;/StructureDefinition-patient-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 2074, column 238</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/CodeSystem/additional-codes-for-marital-status' for &quot;http://example.org/CodeSystem/additional-codes-for-marital-status&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile.html#l9883">output&#8203;/StructureDefinition-patient-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tr&#8203;/td&#8203;/a at Line 2289, column 148</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/CodeSystem/additional-codes-for-marital-status' for &quot;http://example.org/CodeSystem/additional-codes-for-marital-status&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile.html#l10211">output&#8203;/StructureDefinition-patient-profile&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2505, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile.profile.history.html#l313">output&#8203;/StructureDefinition-patient-profile&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile.profile.json.html#l8302">output&#8203;/StructureDefinition-patient-profile&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 4372, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile.profile.ttl.html#l15612">output&#8203;/StructureDefinition-patient-profile&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 3222, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-profile.profile.xml.html#l15537">output&#8203;/StructureDefinition-patient-profile&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 4006, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-additional-codes-for-marital-status-testing.html#l318">output&#8203;/ValueSet-additional-codes-for-marital-status-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-additional-codes-for-marital-status.change.history.html#l287">output&#8203;/ValueSet-additional-codes-for-marital-status&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-additional-codes-for-marital-status.html#l462">output&#8203;/ValueSet-additional-codes-for-marital-status&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 286, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-additional-codes-for-marital-status.json.html#l381">output&#8203;/ValueSet-additional-codes-for-marital-status&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 246, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-additional-codes-for-marital-status.ttl.html#l423">output&#8203;/ValueSet-additional-codes-for-marital-status&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 247, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-additional-codes-for-marital-status.xml.html#l428">output&#8203;/ValueSet-additional-codes-for-marital-status&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-heart-rate-recovery-testing.html#l318">output&#8203;/ValueSet-heart-rate-recovery-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-heart-rate-recovery.change.history.html#l287">output&#8203;/ValueSet-heart-rate-recovery&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-heart-rate-recovery.html#l520">output&#8203;/ValueSet-heart-rate-recovery&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 302, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-heart-rate-recovery.json.html#l420">output&#8203;/ValueSet-heart-rate-recovery&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 272, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-heart-rate-recovery.ttl.html#l498">output&#8203;/ValueSet-heart-rate-recovery&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 260, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-heart-rate-recovery.xml.html#l518">output&#8203;/ValueSet-heart-rate-recovery&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 264, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-interpretation-confidence-testing.html#l318">output&#8203;/ValueSet-interpretation-confidence-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-interpretation-confidence.change.history.html#l287">output&#8203;/ValueSet-interpretation-confidence&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 186, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-interpretation-confidence.html#l511">output&#8203;/ValueSet-interpretation-confidence&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 286, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-interpretation-confidence.json.html#l399">output&#8203;/ValueSet-interpretation-confidence&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 257, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-interpretation-confidence.ttl.html#l456">output&#8203;/ValueSet-interpretation-confidence&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 253, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-interpretation-confidence.xml.html#l464">output&#8203;/ValueSet-interpretation-confidence&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#l538">output&#8203;/artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 298, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="conformance.html#l304">output&#8203;/conformance&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 180, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l328">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 208, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#l376">output&#8203;/toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 142, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;MyPublisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>IG</b></td><td><b>warning</b></td><td><b>The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_CodeSystem-additional-codesystem-for-marital-status"> </a>
+<h2><a href="CodeSystem-additional-codesystem-for-marital-status.html">fsh-generated/resources/CodeSystem-additional-codesystem-for-marital-status.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem</b></td><td><b>information</b></td><td><b>Los CodeSystems no definidos por HL7 DEBERIAN tener un valor  definido para el elemento caseSensitive para que los usuarios conozcan el estado y significado del sistema de codificación claramente</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c2190)</b></td><td><b>warning</b></td><td><b>!!El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CODESYSTEM_SHAREABLE_MISSING</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c2190)</b></td><td><b>warning</b></td><td><b>!!El perfil ShareableValueSet dice que el elemento caseSensitive es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CODESYSTEM_SHAREABLE_MISSING</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_ImplementationGuide-fhir.example"> </a>
+<h2><a href="index.html">fsh-generated/resources/ImplementationGuide-fhir.example.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>ImplementationGuide/fhir.example: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide (l1/c14924)</b></td><td><b>warning</b></td><td><b>!!La regla ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' falló</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ImplementationGuide#ig-0</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_Observation-HeartRateRecoveryExample"> </a>
+<h2><a href="Observation-HeartRateRecoveryExample.html">fsh-generated/resources/Observation-HeartRateRecoveryExample.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-hrr-profile.html">HrrProfile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Observation.extension[0] (l23/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>!!Este elemento no coincide con ninguna partición conocida defined in the profile http://example.org/StructureDefinition/hrr-profile|0.1.0</b> <span id="sl105" class="flip" onclick="flip('l105')">Show Reasoning</span><div id="l105" style="display: none"><p>&nbsp;</p>!!Este elemento no coincide con ninguna partición conocida definido en el perfil http://example.org/StructureDefinition/hrr-profile|0.1.0<ul><li>Observation.extension[0]: discriminator = true and ('http://example.org/StructureDefinition/interpretation-certainty' in url)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.extension[0] (l23/c6)</b></td><td><b>error</b></td><td><b>!!La extension http://hl7.org/fhir/StructureDefinition/interpretation-certainty es desconocida y no está permitida aquí</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Extension_EXT_Unknown_NotHere</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.extension[0].url (l24/c80)</b></td><td><b>error</b></td><td><b>El valor URL 'http://hl7.org/fhir/StructureDefinition/interpretation-certainty' no puede resolverse</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation.code.coding[0] (l38/c4)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://www.intersystems.com/hrr' could not be found, so the code cannot be validated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation.code (l38/c4)</b></td><td><b>warning</b></td><td><b>Unable to check whether the code is in the value set 'http://example.org/ValueSet/heart-rate-recovery|0.1.0' because the code system http://www.intersystems.com/hrr was not found</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation.code (l38/c4)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://www.intersystems.com/hrr' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://example.org/ValueSet/heart-rate-recovery|0.1.0' because the code system http://www.intersystems.com/hrr was not found</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation&#8203;.code&#8203;.coding[0]&#8203;.system (l42&#8203;/c52)</b></td><td><b>warning</b></td><td><b>El valor URL 'http://www.intersystems.com/hrr' no puede resolverse</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation&#8203;.interpretation[0]&#8203;.coding[0] (l14&#8203;/c6)</b></td><td><b>warning</b></td><td><b>!!El Coding no tiene sistema - no puede ser validado</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td><b>!!Todos los recursos Observation deben tener un elemento performer</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">All_observations_should_have_a_performer</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td><b>!!Todos los recursos Observation deben tener un elemento effectiveDateTime o effectivePeriod</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_Patient-GastonMuzas"> </a>
+<h2><a href="Patient-GastonMuzas.html">fsh-generated/resources/Patient-GastonMuzas.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-patient-profile.html">Patient Profile</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient.identifier[0] (l10/c6)</b></td><td><b>error</b></td><td><b>Identifier.system debe ser una referencia absoluta, no una referencia local</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_Identifier_System</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[0].system (l11/c22)</b></td><td><b>warning</b></td><td><b>El valor URL 'DNI' no puede resolverse</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.maritalStatus (l29/c4)</b></td><td><b>warning</b></td><td><b>!!El ValueSet http://example.org/CodeSystem/additional-codes-for-marital-status no ha sido encontrado por el validador</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_ValueSet_NotFound</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_Patient-ThomasHeart"> </a>
+<h2><a href="Patient-ThomasHeart.html">fsh-generated/resources/Patient-ThomasHeart.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Patient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_StructureDefinition-hrr-fsh"> </a>
+<h2><a href="StructureDefinition-hrr-fsh.html">fsh-generated/resources/StructureDefinition-hrr-fsh.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[4]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c23734)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/StructureDefinition&#8203;/hrr-fsh')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_StructureDefinition-hrr-profile"> </a>
+<h2><a href="StructureDefinition-hrr-profile.html">fsh-generated/resources/StructureDefinition-hrr-profile.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_StructureDefinition-interpretation-certainty"> </a>
+<h2><a href="StructureDefinition-interpretation-certainty.html">fsh-generated/resources/StructureDefinition-interpretation-certainty.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td><b>Review the extension type for interpretation-certainty: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_CONTEXT_SHOULD_NOT_BE_ELEMENT</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/StructureDefinition&#8203;/interpretation-certainty')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_StructureDefinition-patient-profile"> </a>
+<h2><a href="StructureDefinition-patient-profile.html">fsh-generated/resources/StructureDefinition-patient-profile.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.text.div</b></td><td><b>error</b></td><td><b>Hyperlink 'http://example.org/CodeSystem/additional-codes-for-marital-status' at 'div/table/tr/td/a' for 'http://example.org/CodeSystem/additional-codes-for-marital-status' does not resolve</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_ValueSet-additional-codes-for-marital-status"> </a>
+<h2><a href="ValueSet-additional-codes-for-marital-status.html">fsh-generated/resources/ValueSet-additional-codes-for-marital-status.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0] (l1/c1305)</b></td><td><b>error</b></td><td><b>The system 'http://hl7.org/fhir/ValueSet/marital-status' is actually a value set, which itself refers to the systems http://terminology.hl7.org/CodeSystem/v3-MaritalStatus, http://terminology.hl7.org/CodeSystem/v3-NullFlavor</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALUESET_INCLUDE_WRONG_VS_MANY</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1392)</b></td><td><b>warning</b></td><td><b>!!El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.where(id = 'additional-codes-for-marital-status')</b></td><td><b>warning</b></td><td><b>Error from https://tx.fhir.org/r4: Unable to provide support for code system http://hl7.org/fhir/ValueSet/marital-status</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l5">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_ValueSet-heart-rate-recovery"> </a>
+<h2><a href="ValueSet-heart-rate-recovery.html">fsh-generated/resources/ValueSet-heart-rate-recovery.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.system (l1&#8203;/c1595)</b></td><td><b>warning</b></td><td><b>El valor URL 'http://www.intersystems.com/hrr' no puede resolverse</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[1]&#8203;.system (l1&#8203;/c1640)</b></td><td><b>warning</b></td><td><b>El valor URL 'http://www.intersystems.com/hrr' no puede resolverse</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose.include[1]</b></td><td><b>warning</b></td><td><b>Se especificó el sistema desconocido 'http://www.intersystems.com/hrr', así que los Conceptos y Filtros no pueden ser verificados (Detalles: A definition for CodeSystem 'http://www.intersystems.com/hrr' could not be found, so the code cannot be validated)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALUESET_UNC_SYSTEM_WARNING</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2085)</b></td><td><b>warning</b></td><td><b>!!El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.where(id = 'heart-rate-recovery')</b></td><td><b>warning</b></td><td><b>Error from http://tx.fhir.org/r4: Unable to provide support for code system http://www.intersystems.com/hrr</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_gaston_Escritorio_Desarrollo_FHIR_CABA_example-project_fsh-generated_resources_ValueSet-interpretation-confidence"> </a>
+<h2><a href="ValueSet-interpretation-confidence.html">fsh-generated/resources/ValueSet-interpretation-confidence.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0] (l1&#8203;/c1513)</b></td><td><b>error</b></td><td><b>!!El código 415584804 no es válido en el sistema http://snomed.info/sct</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALUESET_INCLUDE_INVALID_CONCEPT_CODE</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0] (l1&#8203;/c1513)</b></td><td><b>information</b></td><td><b>Unknown code '415584804' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown code '415584804' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[2] (l1&#8203;/c1650)</b></td><td><b>error</b></td><td><b>!!El código 410535003 no es válido en el sistema http://snomed.info/sct</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">VALUESET_INCLUDE_INVALID_CONCEPT_CODE</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1655)</b></td><td><b>warning</b></td><td><b>!!El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="All_observations_should_have_a_performer"> </a>
+<h2>All_observations_should_have_a_performer</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-HeartRateRecoveryExample.html">fsh-generated/resources/Observation-HeartRateRecoveryExample.json</a></td><td><b>!!Todos los recursos Observation deben tener un elemento performer</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"> </a>
+<h2>All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-HeartRateRecoveryExample.html">fsh-generated/resources/Observation-HeartRateRecoveryExample.json</a></td><td><b>!!Todos los recursos Observation deben tener un elemento effectiveDateTime o effectivePeriod</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="CODESYSTEM_SHAREABLE_MISSING"> </a>
+<h2>CODESYSTEM_SHAREABLE_MISSING</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-additional-codesystem-for-marital-status.html">fsh-generated/resources/CodeSystem-additional-codesystem-for-marital-status.json</a></td><td><b>!!El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-additional-codesystem-for-marital-status.html">fsh-generated/resources/CodeSystem-additional-codesystem-for-marital-status.json</a></td><td><b>!!El perfil ShareableValueSet dice que el elemento caseSensitive es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Details_for__matching_against_Profile_"> </a>
+<h2>Details_for__matching_against_Profile_</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-HeartRateRecoveryExample.html">fsh-generated/resources/Observation-HeartRateRecoveryExample.json</a></td><td><b>!!Este elemento no coincide con ninguna partición conocida defined in the profile http://example.org/StructureDefinition/hrr-profile|0.1.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Extension_EXT_Unknown_NotHere"> </a>
+<h2>Extension_EXT_Unknown_NotHere</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-HeartRateRecoveryExample.html">fsh-generated/resources/Observation-HeartRateRecoveryExample.json</a></td><td><b>!!La extension http://hl7.org/fhir/StructureDefinition/interpretation-certainty es desconocida y no está permitida aquí</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_DEPENDS_ON_DEPRECATED"> </a>
+<h2>MSG_DEPENDS_ON_DEPRECATED</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-hrr-fsh.html">fsh-generated/resources/StructureDefinition-hrr-fsh.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SD_CONTEXT_SHOULD_NOT_BE_ELEMENT"> </a>
+<h2>SD_CONTEXT_SHOULD_NOT_BE_ELEMENT</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-interpretation-certainty.html">fsh-generated/resources/StructureDefinition-interpretation-certainty.json</a></td><td><b>Review the extension type for interpretation-certainty: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_ValueSet_NotFound"> </a>
+<h2>Terminology_TX_ValueSet_NotFound</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-GastonMuzas.html">fsh-generated/resources/Patient-GastonMuzas.json</a></td><td><b>!!El ValueSet http://example.org/CodeSystem/additional-codes-for-marital-status no ha sido encontrado por el validador</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_Identifier_System"> </a>
+<h2>Type_Specific_Checks_DT_Identifier_System</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Patient-GastonMuzas.html">fsh-generated/resources/Patient-GastonMuzas.json</a></td><td><b>Identifier.system debe ser una referencia absoluta, no una referencia local</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_URL_Resolve"> </a>
+<h2>Type_Specific_Checks_DT_URL_Resolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-HeartRateRecoveryExample.html">fsh-generated/resources/Observation-HeartRateRecoveryExample.json</a></td><td><b>El valor URL 'http://hl7.org/fhir/StructureDefinition/interpretation-certainty' no puede resolverse</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Observation-HeartRateRecoveryExample.html">fsh-generated/resources/Observation-HeartRateRecoveryExample.json</a></td><td><b>El valor URL 'http://www.intersystems.com/hrr' no puede resolverse</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-GastonMuzas.html">fsh-generated/resources/Patient-GastonMuzas.json</a></td><td><b>El valor URL 'DNI' no puede resolverse</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-heart-rate-recovery.html">fsh-generated/resources/ValueSet-heart-rate-recovery.json</a></td><td><b>El valor URL 'http://www.intersystems.com/hrr' no puede resolverse</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-heart-rate-recovery.html">fsh-generated/resources/ValueSet-heart-rate-recovery.json</a></td><td><b>El valor URL 'http://www.intersystems.com/hrr' no puede resolverse</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALUESET_INCLUDE_INVALID_CONCEPT_CODE"> </a>
+<h2>VALUESET_INCLUDE_INVALID_CONCEPT_CODE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-interpretation-confidence.html">fsh-generated/resources/ValueSet-interpretation-confidence.json</a></td><td><b>!!El código 415584804 no es válido en el sistema http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-interpretation-confidence.html">fsh-generated/resources/ValueSet-interpretation-confidence.json</a></td><td><b>!!El código 410535003 no es válido en el sistema http://snomed.info/sct</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALUESET_INCLUDE_WRONG_VS_MANY"> </a>
+<h2>VALUESET_INCLUDE_WRONG_VS_MANY</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-additional-codes-for-marital-status.html">fsh-generated/resources/ValueSet-additional-codes-for-marital-status.json</a></td><td><b>The system 'http://hl7.org/fhir/ValueSet/marital-status' is actually a value set, which itself refers to the systems http://terminology.hl7.org/CodeSystem/v3-MaritalStatus, http://terminology.hl7.org/CodeSystem/v3-NullFlavor</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALUESET_UNC_SYSTEM_WARNING"> </a>
+<h2>VALUESET_UNC_SYSTEM_WARNING</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-heart-rate-recovery.html">fsh-generated/resources/ValueSet-heart-rate-recovery.json</a></td><td><b>Se especificó el sistema desconocido 'http://www.intersystems.com/hrr', así que los Conceptos y Filtros no pueden ser verificados (Detalles: A definition for CodeSystem 'http://www.intersystems.com/hrr' could not be found, so the code cannot be validated)</b></td>
+   </tr>
+</table>
+</body>
+</html>

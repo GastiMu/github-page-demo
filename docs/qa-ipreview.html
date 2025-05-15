@@ -1,0 +1,2560 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>IP Review</title>
+    <link rel="stylesheet" href="fhir.css"/>
+  </head>
+  <body>
+    <h2>Unattributed Code Systems</h2>
+    <ul>
+      <li>
+        <a href="Observation-HeartRateRecoveryExample.html">
+<code>http://www.intersystems.com/hrr</code>        </a>
+      </li>
+    </ul>
+    <h2>Copyright Fragment</h2>
+    <p style="color: maroon">
+      <b>This fragment is not visible to the reader</b>
+    </p>
+    <div>
+      <p>This publication includes IP covered under the following statements.</p>
+
+      <ul>
+
+        <li>
+This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact           <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a>
+ or           <a href="mailto:info@snomed.org">info@snomed.org</a>
+.          <div onClick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}" id="ipp_1">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_1">
+
+            <ul>
+
+              <li>
+                <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>
+:                 <a href="StructureDefinition-interpretation-certainty.html">InterpretationCertainty</a>
+,                 <a href="ValueSet-interpretation-confidence.html">InterpretationConfidence</a>
+ and                 <a href="Observation-HeartRateRecoveryExample.html">Observation/HeartRateRecoveryExample</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+
+      </ul>
+
+
+    </div>
+    <h2>Copyright and Registered Trademark Uses</h2>
+    <ul>
+      <li>
+
+          IG &copy; 2025+ MyPublisher.  Package fhir.example#0.1.0 based on FHIR 4.0.1. Generated 2025-05-11 
+          
+          
+                      Links: Table of Contents |
+                 QA Report
+                 
+                
+           
+         (        <a href="toc.html">src</a>
+)
+      </li>
+      <li>
+
+          hl7.fhir.us.hai: Healthcare Associated Infection Implementation Guide   &reg;&copy; HL7 |
+             
+                CC0
+         (        <a href="searchform.html">src</a>
+)
+      </li>
+      <li>
+exampleproject - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the Directory of published versions (        <a href="toc.html">src</a>
+)
+      </li>
+    </ul>
+    <h2>External References</h2>
+    <table class="grid">
+      <tr>
+        <th>
+          <b>Type</b>
+        </th>
+        <th>
+          <b>Reference</b>
+        </th>
+        <th>
+          <b>Content</b>
+        </th>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">example.org</a>
+        </td>
+        <td>
+          <span style="opacity: 0.5">Marital (civil) status of a patient</span>
+          <br/>
+          <span style="font-weight:bold">Binding: </span>
+          <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">http://example.org/CodeSystem/additional-codes-for-marital-status</a>
+ (          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-interpretation-confidence.html">web</a>
+        </td>
+        <td>
+          <a href="http://snomed.info/id/415584804">snomed.info</a>
+        </td>
+        <td>
+          <a href="http://snomed.info/id/415584804">415584804</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-interpretation-confidence.html">web</a>
+        </td>
+        <td>
+          <a href="http://snomed.info/id/410592001">snomed.info</a>
+        </td>
+        <td>
+          <a href="http://snomed.info/id/410592001">410592001</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-interpretation-confidence.html">web</a>
+        </td>
+        <td>
+          <a href="http://snomed.info/id/410535003">snomed.info</a>
+        </td>
+        <td>
+          <a href="http://snomed.info/id/410535003">410535003</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="CodeSystem-additional-codesystem-for-marital-status-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l318">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="CodeSystem-additional-codesystem-for-marital-status.change.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l287">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="CodeSystem-additional-codesystem-for-marital-status.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l412">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="CodeSystem-additional-codesystem-for-marital-status.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l405">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="CodeSystem-additional-codesystem-for-marital-status.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l474">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="CodeSystem-additional-codesystem-for-marital-status.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l482">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Observation-HeartRateRecoveryExample.change.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l287">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Observation-HeartRateRecoveryExample.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l344">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Observation-HeartRateRecoveryExample.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l390">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Observation-HeartRateRecoveryExample.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l429">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Observation-HeartRateRecoveryExample.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l422">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Patient-GastonMuzas.change.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l287">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Patient-GastonMuzas.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l332">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Patient-GastonMuzas.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l378">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Patient-GastonMuzas.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l420">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Patient-GastonMuzas.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l416">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Patient-ThomasHeart.change.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l287">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Patient-ThomasHeart.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l309">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Patient-ThomasHeart.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l330">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Patient-ThomasHeart.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l339">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Patient-ThomasHeart.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l341">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-hrr-fsh-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l5839">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-hrr-fsh-examples.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l312">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-hrr-fsh-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1294">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-hrr-fsh-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l334">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-hrr-fsh.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l6771">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-hrr-fsh.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l307">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-hrr-fsh.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l5524">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-hrr-fsh.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l10302">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-hrr-fsh.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l10299">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-hrr-profile-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l6343">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-hrr-profile-examples.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l344">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-hrr-profile-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1293">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-hrr-profile-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l340">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-hrr-profile.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l7371">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-hrr-profile.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l313">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-hrr-profile.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l5692">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-hrr-profile.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l10608">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-hrr-profile.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l10593">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-interpretation-certainty-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1612">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-interpretation-certainty-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l365">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-interpretation-certainty-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l334">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-interpretation-certainty.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1277">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-interpretation-certainty.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l307">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-interpretation-certainty.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l886">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-interpretation-certainty.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1371">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-interpretation-certainty.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1326">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">example.org</a>
+        </td>
+        <td>
+          <a name="l2616">​</a>
+          <span style="color:DarkGray">Unless not suitable, these codes SHALL be taken from </span>
+           <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">http://example.org/CodeSystem/additional-codes-for-marital-status</a>
+          <span style="color:DarkGray;text-decoration:line-through">http://hl7.org/fhir/ValueSet/marital-status</span>
+          <br/>
+(          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a>
+ to           <span class="copy-text-inline">
+<code>http://example.org/CodeSystem/additional-codes-for-marital-status</code><button data-clipboard-text="http://example.org/CodeSystem/additional-codes-for-marital-status" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">example.org</a>
+        </td>
+        <td>
+          <a name="l3516">​</a>
+Unless not suitable, these codes SHALL be taken from            <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">http://example.org/CodeSystem/additional-codes-for-marital-status</a>
+          <br/>
+(          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a>
+ to           <span class="copy-text-inline">
+<code>http://example.org/CodeSystem/additional-codes-for-marital-status</code><button data-clipboard-text="http://example.org/CodeSystem/additional-codes-for-marital-status" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">example.org</a>
+        </td>
+        <td>
+          <a name="l7887">​</a>
+Unless not suitable, these codes SHALL be taken from            <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">http://example.org/CodeSystem/additional-codes-for-marital-status</a>
+          <br/>
+(          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible">extensible</a>
+ to           <span class="copy-text-inline">
+<code>http://example.org/CodeSystem/additional-codes-for-marital-status</code><button data-clipboard-text="http://example.org/CodeSystem/additional-codes-for-marital-status" title="Click to Copy URL" class="btn-copy"></button>          </span>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l10151">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile-examples.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l344">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile-mappings.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l1529">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l340">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">example.org</a>
+        </td>
+        <td>
+          <a name="l1276">​</a>
+Marital (civil) status of a patient          <br/>
+          <span style="font-weight:bold">Binding: </span>
+          <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">http://example.org/CodeSystem/additional-codes-for-marital-status</a>
+ (          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>
+)          <br/>
+          <span style="font-weight:bold">ele-1: </span>
+All FHIR elements must have a @value or children
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">example.org</a>
+        </td>
+        <td>
+          <a name="l1569">​</a>
+          <a style="opacity: 1.0" href="http://example.org/CodeSystem/additional-codes-for-marital-status">http://example.org/CodeSystem/additional-codes-for-marital-status</a>
+          <div>
+            <code>http://example.org/CodeSystem/additional-codes-for-marital-status</code>
+            <button data-clipboard-text="http://example.org/CodeSystem/additional-codes-for-marital-status" title="Click to copy URL" class="btn-copy"></button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">example.org</a>
+        </td>
+        <td>
+          <a name="l2311">​</a>
+          <a style="opacity: 1.0" href="http://example.org/CodeSystem/additional-codes-for-marital-status">http://example.org/CodeSystem/additional-codes-for-marital-status</a>
+          <div>
+            <code>http://example.org/CodeSystem/additional-codes-for-marital-status</code>
+            <button data-clipboard-text="http://example.org/CodeSystem/additional-codes-for-marital-status" title="Click to copy URL" class="btn-copy"></button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">example.org</a>
+        </td>
+        <td>
+          <a name="l3965">​</a>
+Marital (civil) status of a patient          <br/>
+          <span style="font-weight:bold">Binding: </span>
+          <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">http://example.org/CodeSystem/additional-codes-for-marital-status</a>
+ (          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">example.org</a>
+        </td>
+        <td>
+          <a name="l4993">​</a>
+          <a style="opacity: 1.0" href="http://example.org/CodeSystem/additional-codes-for-marital-status">http://example.org/CodeSystem/additional-codes-for-marital-status</a>
+          <div>
+            <code>http://example.org/CodeSystem/additional-codes-for-marital-status</code>
+            <button data-clipboard-text="http://example.org/CodeSystem/additional-codes-for-marital-status" title="Click to copy URL" class="btn-copy"></button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">example.org</a>
+        </td>
+        <td>
+          <a name="l6169">​</a>
+Marital (civil) status of a patient          <br/>
+          <span style="font-weight:bold">Binding: </span>
+          <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">http://example.org/CodeSystem/additional-codes-for-marital-status</a>
+ (          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>
+)          <br/>
+          <span style="font-weight:bold">ele-1: </span>
+All FHIR elements must have a @value or children
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">example.org</a>
+        </td>
+        <td>
+          <a name="l6462">​</a>
+          <a style="opacity: 1.0" href="http://example.org/CodeSystem/additional-codes-for-marital-status">http://example.org/CodeSystem/additional-codes-for-marital-status</a>
+          <div>
+            <code>http://example.org/CodeSystem/additional-codes-for-marital-status</code>
+            <button data-clipboard-text="http://example.org/CodeSystem/additional-codes-for-marital-status" title="Click to copy URL" class="btn-copy"></button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">example.org</a>
+        </td>
+        <td>
+          <a name="l7201">​</a>
+          <a style="opacity: 1.0" href="http://example.org/CodeSystem/additional-codes-for-marital-status">http://example.org/CodeSystem/additional-codes-for-marital-status</a>
+          <div>
+            <code>http://example.org/CodeSystem/additional-codes-for-marital-status</code>
+            <button data-clipboard-text="http://example.org/CodeSystem/additional-codes-for-marital-status" title="Click to copy URL" class="btn-copy"></button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">example.org</a>
+        </td>
+        <td>
+          <a name="l8855">​</a>
+Marital (civil) status of a patient          <br/>
+          <span style="font-weight:bold">Binding: </span>
+          <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">http://example.org/CodeSystem/additional-codes-for-marital-status</a>
+ (          <a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>
+)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/CodeSystem/additional-codes-for-marital-status">example.org</a>
+        </td>
+        <td>
+          <a name="l9883">​</a>
+          <a style="opacity: 1.0" href="http://example.org/CodeSystem/additional-codes-for-marital-status">http://example.org/CodeSystem/additional-codes-for-marital-status</a>
+          <div>
+            <code>http://example.org/CodeSystem/additional-codes-for-marital-status</code>
+            <button data-clipboard-text="http://example.org/CodeSystem/additional-codes-for-marital-status" title="Click to copy URL" class="btn-copy"></button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l10211">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile.profile.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l313">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile.profile.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l8302">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile.profile.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l15612">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-patient-profile.profile.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l15537">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-additional-codes-for-marital-status-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l318">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-additional-codes-for-marital-status.change.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l287">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-additional-codes-for-marital-status.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l462">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-additional-codes-for-marital-status.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l381">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-additional-codes-for-marital-status.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l423">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-additional-codes-for-marital-status.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l428">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-heart-rate-recovery-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l318">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-heart-rate-recovery.change.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l287">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-heart-rate-recovery.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l520">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-heart-rate-recovery.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l420">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-heart-rate-recovery.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l498">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-heart-rate-recovery.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l518">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-interpretation-confidence-testing.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l318">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-interpretation-confidence.change.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l287">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-interpretation-confidence.html">web</a>
+        </td>
+        <td>
+          <a href="http://snomed.info/id/410592001">snomed.info</a>
+        </td>
+        <td>
+          <a name="x-http://snomed.info/sct-410592001"> </a>
+&nbsp;&nbsp;          <a href="http://snomed.info/id/410592001">410592001</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-interpretation-confidence.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l511">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-interpretation-confidence.json.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l399">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-interpretation-confidence.ttl.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l456">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="ValueSet-interpretation-confidence.xml.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l464">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="artifacts.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l538">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="conformance.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l304">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="index.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l328">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="toc.html">web</a>
+        </td>
+        <td>
+          <a href="http://example.org/example-publisher">example.org</a>
+        </td>
+        <td>
+          <a name="l376">​</a>
+
+          IG &copy; 2025+           <a style="color:var(--footer-hyperlink-text-color)" href="http://example.org/example-publisher">MyPublisher</a>
+.  Package fhir.example#0.1.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
+. Generated           <span title="Sun, May 11, 2025 21:00-0300">2025-05-11</span>
+
+                    <br/>
+
+                    <span style="color: var(--footer-highlight-text-color)">
+
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+          </span>
+
+        
+        </td>
+      </tr>
+    </table>
+    <h2>Internal Images</h2>
+    <table class="grid"></table>
+  </body>
+</html>

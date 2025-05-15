@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://example.org/ValueSet/additional-codes-for-marital-status,0.1.0,active,,AdditionalCodesForMaritalStatus,Additional valueset for marital status,"Extensión de Value Set Codes de estados civiles",,"Internal,FHIR"
+http://example.org/ValueSet/heart-rate-recovery,0.1.0,active,,HeartRateRecovery,HeartRateRecovery,"Códigos para recuperación de frecuencia cardíaca",,"Other"
+http://example.org/ValueSet/interpretation-confidence,0.1.0,active,,InterpretationConfidence,Interpretation Confidence Value Set,"Grado de confianza de que una condición está presente",,"SCT"

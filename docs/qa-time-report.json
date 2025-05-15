@@ -1,0 +1,573 @@
+{
+  "date" : "Sun, 11 May, 2025 21:00:12 -0300",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-fhir.example.json",
+      "size" : 3897,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 10
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 24,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 24,
+          "length" : 1827
+        },
+        {
+          "activity" : "validate",
+          "start" : 30,
+          "length" : 10866
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 41,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 41,
+          "length" : 80
+        },
+        {
+          "activity" : "generate2",
+          "start" : 45,
+          "length" : 62
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 64,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-additional-codesystem-for-marital-status.json",
+      "size" : 902,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 23,
+          "length" : 13
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 18
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 26,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 39
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 41,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 21
+        },
+        {
+          "activity" : "generate2",
+          "start" : 45,
+          "length" : 1397
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Observation-HeartRateRecoveryExample.json",
+      "size" : 851,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 23,
+          "length" : 13
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 26,
+          "length" : 1354
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 30
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 47,
+          "length" : 28
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-GastonMuzas.json",
+      "size" : 695,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 23,
+          "length" : 13
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 27,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 47,
+          "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-ThomasHeart.json",
+      "size" : 151,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 23,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 47,
+          "length" : 11
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-hrr-fsh.json",
+      "size" : 1408,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 23,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 23,
+          "length" : 53
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 27,
+          "length" : 50
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 571
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 41,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 255
+        },
+        {
+          "activity" : "generate2",
+          "start" : 47,
+          "length" : 776
+        },
+        {
+          "activity" : "generate2",
+          "start" : 50,
+          "length" : 808
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 13
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-hrr-profile.json",
+      "size" : 2291,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 23,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 23,
+          "length" : 53
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 27,
+          "length" : 32
+        },
+        {
+          "activity" : "validate",
+          "start" : 30,
+          "length" : 206
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 41,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 171
+        },
+        {
+          "activity" : "generate2",
+          "start" : 47,
+          "length" : 520
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 189
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 57,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 11
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-interpretation-certainty.json",
+      "size" : 1439,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 23,
+          "length" : 12
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 23,
+          "length" : 13
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 27,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 30,
+          "length" : 33
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 36
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 106
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 32
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-patient-profile.json",
+      "size" : 3003,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 23,
+          "length" : 12
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 23,
+          "length" : 64
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 27,
+          "length" : 1743
+        },
+        {
+          "activity" : "validate",
+          "start" : 30,
+          "length" : 413
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 41,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 241
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 520
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 240
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 11
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-additional-codes-for-marital-status.json",
+      "size" : 576,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 39
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 21
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 49,
+          "length" : 1824
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-heart-rate-recovery.json",
+      "size" : 1221,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 23,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 23
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 50,
+          "length" : 39
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-interpretation-confidence.json",
+      "size" : 803,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 23,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 4
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 24,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 10
+        },
+        {
+          "activity" : "generate1",
+          "start" : 42,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 50,
+          "length" : 51
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}

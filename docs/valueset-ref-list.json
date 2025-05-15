@@ -1,0 +1,41 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/ValueSet/additional-codes-for-marital-status",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "AdditionalCodesForMaritalStatus",
+      "title" : "Additional valueset for marital status",
+      "description" : "Extensión de Value Set Codes de estados civiles",
+      "systems" : [
+        "http://hl7.org/fhir/ValueSet/marital-status",
+        "http://example.org/CodeSystem/additional-codesystem-for-marital-status"
+      ]
+    },
+    {
+      "url" : "http://example.org/ValueSet/heart-rate-recovery",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "HeartRateRecovery",
+      "title" : "HeartRateRecovery",
+      "description" : "Códigos para recuperación de frecuencia cardíaca",
+      "systems" : ["http://www.intersystems.com/hrr"],
+      "uses" : {
+      },
+      "StructureDefinition-hrr-profile.html" : "HrrProfile",
+      "StructureDefinition-hrr-fsh.html" : "HRR Observation Profile"
+    },
+    {
+      "url" : "http://example.org/ValueSet/interpretation-confidence",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "InterpretationConfidence",
+      "title" : "Interpretation Confidence Value Set",
+      "description" : "Grado de confianza de que una condición está presente",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-interpretation-certainty.html" : "Interpretation Certainty"
+    }
+  ]
+}

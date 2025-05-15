@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "additional-codes-for-marital-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet additional-codes-for-marital-status</b></p><a name=\"additional-codes-for-marital-status\"> </a><a name=\"hcadditional-codes-for-marital-status\"> </a><a name=\"additional-codes-for-marital-status-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://hl7.org/fhir/ValueSet/marital-status</code></li><li>Include all codes defined in <a href=\"CodeSystem-additional-codesystem-for-marital-status.html\"><code>http://example.org/CodeSystem/additional-codesystem-for-marital-status</code></a></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/additional-codes-for-marital-status",
+  "version" : "0.1.0",
+  "name" : "AdditionalCodesForMaritalStatus",
+  "title" : "Additional valueset for marital status",
+  "status" : "active",
+  "date" : "2025-05-11T20:59:48-03:00",
+  "publisher" : "MyPublisher",
+  "contact" : [{
+    "name" : "MyPublisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "Extensión de Value Set Codes de estados civiles",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/ValueSet/marital-status"
+    },
+    {
+      "system" : "http://example.org/CodeSystem/additional-codesystem-for-marital-status"
+    }]
+  }
+}

@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/CodeSystem/additional-codesystem-for-marital-status> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "additional-codesystem-for-marital-status"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem additional-codesystem-for-marital-status</b></p><a name=\"additional-codesystem-for-marital-status\"> </a><a name=\"hcadditional-codesystem-for-marital-status\"> </a><a name=\"additional-codesystem-for-marital-status-en-US\"> </a><p>This  code system <code>http://example.org/CodeSystem/additional-codesystem-for-marital-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">ghosting<a name=\"additional-codesystem-for-marital-status-ghosting\"> </a></td><td>Ghosting</td><td>Cuando alguien corta contacto con vos sin dar una explicación</td></tr><tr><td style=\"white-space:nowrap\">zombieing<a name=\"additional-codesystem-for-marital-status-zombieing\"> </a></td><td>Zombieing</td><td>Cuando una persona te hizo ghosting y vuelve a aparecer</td></tr><tr><td style=\"white-space:nowrap\">situationship<a name=\"additional-codesystem-for-marital-status-situationship\"> </a></td><td>Situationship</td><td>Una relación romántica no oficializada como noviazgo</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/CodeSystem/additional-codesystem-for-marital-status"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "AdditionalCodeSystemForMaritalStatus"] ; # 
+  fhir:title [ fhir:v "Additional codesystem for marital status"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-05-06"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "MyPublisher"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MyPublisher" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Test para extender los code de estados civiles"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ghosting" ] ;
+     fhir:display [ fhir:v "Ghosting" ] ;
+     fhir:definition [ fhir:v "Cuando alguien corta contacto con vos sin dar una explicación" ]
+  ] [
+     fhir:code [ fhir:v "zombieing" ] ;
+     fhir:display [ fhir:v "Zombieing" ] ;
+     fhir:definition [ fhir:v "Cuando una persona te hizo ghosting y vuelve a aparecer" ]
+  ] [
+     fhir:code [ fhir:v "situationship" ] ;
+     fhir:display [ fhir:v "Situationship" ] ;
+     fhir:definition [ fhir:v "Una relación romántica no oficializada como noviazgo" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

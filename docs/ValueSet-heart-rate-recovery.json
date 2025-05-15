@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "heart-rate-recovery",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet heart-rate-recovery</b></p><a name=\"heart-rate-recovery\"> </a><a name=\"hcheart-rate-recovery\"> </a><a name=\"heart-rate-recovery-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://www.intersystems.com/hrr</code></li><li>Include these codes as defined in <code>http://www.intersystems.com/hrr</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>001</td><td>Heart Rate Recovery after 10 seconds</td></tr><tr><td>002</td><td>Heart Rate Recovery after Exercise 20 seconds</td></tr><tr><td>003</td><td>Heart Rate Recovery after Exercise 30 seconds</td></tr><tr><td>004</td><td>Heart Rate Recovery after 40 Exercise seconds</td></tr><tr><td>005</td><td>Heart Rate Recovery after 50 Exercise seconds</td></tr><tr><td>006</td><td>Heart Rate Recovery after 60 Exercise seconds</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/heart-rate-recovery",
+  "version" : "0.1.0",
+  "name" : "HeartRateRecovery",
+  "title" : "HeartRateRecovery",
+  "status" : "active",
+  "date" : "2025-05-11T20:59:48-03:00",
+  "publisher" : "MyPublisher",
+  "contact" : [{
+    "name" : "MyPublisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "Códigos para recuperación de frecuencia cardíaca",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.intersystems.com/hrr"
+    },
+    {
+      "system" : "http://www.intersystems.com/hrr",
+      "concept" : [{
+        "code" : "001",
+        "display" : "Heart Rate Recovery after 10 seconds"
+      },
+      {
+        "code" : "002",
+        "display" : "Heart Rate Recovery after Exercise 20 seconds"
+      },
+      {
+        "code" : "003",
+        "display" : "Heart Rate Recovery after Exercise 30 seconds"
+      },
+      {
+        "code" : "004",
+        "display" : "Heart Rate Recovery after 40 Exercise seconds"
+      },
+      {
+        "code" : "005",
+        "display" : "Heart Rate Recovery after 50 Exercise seconds"
+      },
+      {
+        "code" : "006",
+        "display" : "Heart Rate Recovery after 60 Exercise seconds"
+      }]
+    }]
+  }
+}

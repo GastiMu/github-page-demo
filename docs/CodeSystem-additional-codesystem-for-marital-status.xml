@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="additional-codesystem-for-marital-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem additional-codesystem-for-marital-status</b></p><a name="additional-codesystem-for-marital-status"> </a><a name="hcadditional-codesystem-for-marital-status"> </a><a name="additional-codesystem-for-marital-status-en-US"> </a><p>This  code system <code>http://example.org/CodeSystem/additional-codesystem-for-marital-status</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">ghosting<a name="additional-codesystem-for-marital-status-ghosting"> </a></td><td>Ghosting</td><td>Cuando alguien corta contacto con vos sin dar una explicación</td></tr><tr><td style="white-space:nowrap">zombieing<a name="additional-codesystem-for-marital-status-zombieing"> </a></td><td>Zombieing</td><td>Cuando una persona te hizo ghosting y vuelve a aparecer</td></tr><tr><td style="white-space:nowrap">situationship<a name="additional-codesystem-for-marital-status-situationship"> </a></td><td>Situationship</td><td>Una relación romántica no oficializada como noviazgo</td></tr></table></div>
+  </text>
+  <url value="http://example.org/CodeSystem/additional-codesystem-for-marital-status"/>
+  <version value="0.1.0"/>
+  <name value="AdditionalCodeSystemForMaritalStatus"/>
+  <title value="Additional codesystem for marital status"/>
+  <status value="active"/>
+  <date value="2025-05-06"/>
+  <publisher value="MyPublisher"/>
+  <contact>
+    <name value="MyPublisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="Test para extender los code de estados civiles"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="ghosting"/>
+    <display value="Ghosting"/>
+    <definition value="Cuando alguien corta contacto con vos sin dar una explicación"/>
+  </concept>
+  <concept>
+    <code value="zombieing"/>
+    <display value="Zombieing"/>
+    <definition value="Cuando una persona te hizo ghosting y vuelve a aparecer"/>
+  </concept>
+  <concept>
+    <code value="situationship"/>
+    <display value="Situationship"/>
+    <definition value="Una relación romántica no oficializada como noviazgo"/>
+  </concept>
+</CodeSystem>

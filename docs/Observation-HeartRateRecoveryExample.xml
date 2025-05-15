@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="HeartRateRecoveryExample"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/hrr-profile"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation HeartRateRecoveryExample</b></p><a name="HeartRateRecoveryExample"> </a><a name="hcHeartRateRecoveryExample"> </a><a name="HeartRateRecoveryExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hrr-profile.html">HrrProfile</a></p></div><p><b>org/fhir/StructureDefinition/interpretation-certainty</b>: <span title="Codes:{http://snomed.info/sct 410592001}">Probably present (qualifier value)</span></p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://www.intersystems.com/hrr 001}">001</span></p><p><b>subject</b>: <a href="Patient-GastonMuzas.html">Gastón Muzas  Male, DoB: 1992-08-23 ( DNI#36871371)</a></p><p><b>value</b>: 45 beats/min</p><p><b>interpretation</b>: <span title="Codes:">abnormal</span></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/interpretation-certainty">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="410592001"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://www.intersystems.com/hrr"/>
+      <code value="001"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/GastonMuzas"/>
+  </subject>
+  <valueQuantity>
+    <value value="45"/>
+    <unit value="beats/min"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <code value="abnormal"/>
+    </coding>
+  </interpretation>
+</Observation>
